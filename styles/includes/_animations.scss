@@ -1,0 +1,95 @@
+@include keyframes("fade-in") {
+    0%  {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@include keyframes("fade-out") {
+    0%  {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@include keyframes("slide-in") {
+    0%  {
+        position: relative;
+        right: -100%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@include keyframes("slide-in-inverted") {
+    0%  {
+        position: relative;
+        right: 0;
+    }
+    100% {
+        right: -100%;
+    }
+}
+
+@include keyframes("slide-left") {
+    0%  {
+        position: relative;
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@include keyframes("slide-down") {
+    0%  {
+        max-height: 0;
+    }
+    100% {
+        max-height: 3000px;
+    }
+}
+
+@include keyframes("slide-up") {
+    0%  {
+        max-height: 3000px;
+    }
+    100% {
+        max-height: 0;
+    }
+}
+
+@include keyframes("iphone-slide") {
+    0%  {
+        left: 0;
+    }
+    12.5%  {
+        left: -100%;
+    }
+    25%  {
+        left: -100%;
+    }
+    37.5%  {
+        left: -200%;
+    }
+    50%  {
+        left: -200%;
+    }
+    62.5%  {
+        left: -300%;
+    }
+    75%  {
+        left: -300%;
+    }
+    87.5%  {
+        left: 0%;
+    }
+    100%  {
+        left: 0%;
+    }
+}

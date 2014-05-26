@@ -1,0 +1,190 @@
+@import 'includes/_mixins';
+@import 'includes/_basic';
+@import 'includes/_animations'; 
+
+
+
+/*------------------------------------*\
+    CONTENTS
+\*------------------------------------*/
+/*
+
+$SETUP
+$VIDEO
+$CONTENT
+
+*/
+
+
+
+
+
+/*------------------------------------*\
+    $SETUP
+\*------------------------------------*/
+//
+// Webfont: Helvetica
+//
+//@import url("http://fast.fonts.net/cssapi/2e6acf9a-f8ea-49db-a816-608996769328.css");
+
+* {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none; 
+}
+
+
+body {
+    background: $grayBg;
+    font-family: $SansSerif, "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-weight: normal;
+    color: $grayText;
+    @include smooth-text;
+    @include responsive-css-includes;
+}
+
+strong {
+    font-family: $BoldSansSerif;
+}
+
+a {
+    color: $red;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: $grayHeadings;
+    letter-spacing: -1px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+/*------------------------------------*\
+    $VIDEO
+\*------------------------------------*/
+
+.video-container {
+
+    iframe,
+    object,
+    embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+    $CONTENT
+\*------------------------------------*/
+.main {
+    width: 1280px;
+    margin: 0 auto;
+    background: #eb0042;
+    padding-bottom: 120px;
+}
+
+.video {
+  width: 100%;
+  height: 970px;
+  background: #fe4d4d;
+  
+  video {
+    position: relative;
+    top: -75px;
+  }
+}
+
+.menu-section {
+  width: 100%;
+  height: 870px;
+  background: #7302dd;
+  @include transform( skewY(-10deg));
+  margin-top: -115px;
+  position: relative;
+  z-index: 50;
+}
+
+.slogan {
+  width: 100%;
+  height: 1000px;
+  background: green;
+  @include transform( skewY(-10deg));
+  position: relative;
+  z-index: 10;
+}
+
+.photos {
+  width: 100%;
+  background: blue;
+  margin-top: -120px;
+  overflow: hidden;
+  
+  .col-container {
+    width: 640px;
+    overflow: hidden;
+    
+    &.col1 {
+      float: left;
+    }
+
+    &.col2 {
+      float: right;
+    }
+    
+    .col {
+      width: 660px;
+      height: 800px;
+      overflow-y: scroll;
+
+      li {
+        list-style: none;
+        img {
+          width: 100%;
+          margin-top: -3px;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  width: 100%;
+  height: 1400px;
+  background: #eb0042;
+  margin-top: -120px;
+  @include transform( skewY(-10deg));
+}
+
+
+
+
+
+
+
+

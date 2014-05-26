@@ -1,0 +1,857 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 */
+/* line 15, ../includes/_basic.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 25, ../includes/_basic.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 29, ../includes/_basic.scss */
+body {
+  line-height: 1;
+}
+
+/* line 33, ../includes/_basic.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../includes/_basic.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 42, ../includes/_basic.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 47, ../includes/_basic.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 52, ../includes/_basic.scss */
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* line 66, ../includes/_basic.scss */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  border: 0;
+  -webkit-appearance: none;
+  padding: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.5em;
+}
+
+/* line 75, ../includes/_basic.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 80, ../includes/_basic.scss */
+.group,
+.clear {
+  *zoom: 1;
+}
+/* line 82, ../includes/_basic.scss */
+.group:before, .group:after,
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+/* line 87, ../includes/_basic.scss */
+.group:after,
+.clear:after {
+  clear: both;
+}
+
+@-webkit-keyframes fade-in {
+  /* line 2, ../includes/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 5, ../includes/_animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade-in {
+  /* line 2, ../includes/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 5, ../includes/_animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fade-in {
+  /* line 2, ../includes/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 5, ../includes/_animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  /* line 2, ../includes/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 5, ../includes/_animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  /* line 11, ../includes/_animations.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 14, ../includes/_animations.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fade-out {
+  /* line 11, ../includes/_animations.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 14, ../includes/_animations.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fade-out {
+  /* line 11, ../includes/_animations.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 14, ../includes/_animations.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  /* line 11, ../includes/_animations.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 14, ../includes/_animations.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slide-in {
+  /* line 20, ../includes/_animations.scss */
+  0% {
+    position: relative;
+    right: -100%;
+  }
+
+  /* line 24, ../includes/_animations.scss */
+  100% {
+    right: 0;
+  }
+}
+
+@-moz-keyframes slide-in {
+  /* line 20, ../includes/_animations.scss */
+  0% {
+    position: relative;
+    right: -100%;
+  }
+
+  /* line 24, ../includes/_animations.scss */
+  100% {
+    right: 0;
+  }
+}
+
+@-o-keyframes slide-in {
+  /* line 20, ../includes/_animations.scss */
+  0% {
+    position: relative;
+    right: -100%;
+  }
+
+  /* line 24, ../includes/_animations.scss */
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slide-in {
+  /* line 20, ../includes/_animations.scss */
+  0% {
+    position: relative;
+    right: -100%;
+  }
+
+  /* line 24, ../includes/_animations.scss */
+  100% {
+    right: 0;
+  }
+}
+
+@-webkit-keyframes slide-in-inverted {
+  /* line 30, ../includes/_animations.scss */
+  0% {
+    position: relative;
+    right: 0;
+  }
+
+  /* line 34, ../includes/_animations.scss */
+  100% {
+    right: -100%;
+  }
+}
+
+@-moz-keyframes slide-in-inverted {
+  /* line 30, ../includes/_animations.scss */
+  0% {
+    position: relative;
+    right: 0;
+  }
+
+  /* line 34, ../includes/_animations.scss */
+  100% {
+    right: -100%;
+  }
+}
+
+@-o-keyframes slide-in-inverted {
+  /* line 30, ../includes/_animations.scss */
+  0% {
+    position: relative;
+    right: 0;
+  }
+
+  /* line 34, ../includes/_animations.scss */
+  100% {
+    right: -100%;
+  }
+}
+
+@keyframes slide-in-inverted {
+  /* line 30, ../includes/_animations.scss */
+  0% {
+    position: relative;
+    right: 0;
+  }
+
+  /* line 34, ../includes/_animations.scss */
+  100% {
+    right: -100%;
+  }
+}
+
+@-webkit-keyframes slide-left {
+  /* line 40, ../includes/_animations.scss */
+  0% {
+    position: relative;
+    left: 0;
+  }
+
+  /* line 44, ../includes/_animations.scss */
+  100% {
+    left: 100%;
+  }
+}
+
+@-moz-keyframes slide-left {
+  /* line 40, ../includes/_animations.scss */
+  0% {
+    position: relative;
+    left: 0;
+  }
+
+  /* line 44, ../includes/_animations.scss */
+  100% {
+    left: 100%;
+  }
+}
+
+@-o-keyframes slide-left {
+  /* line 40, ../includes/_animations.scss */
+  0% {
+    position: relative;
+    left: 0;
+  }
+
+  /* line 44, ../includes/_animations.scss */
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes slide-left {
+  /* line 40, ../includes/_animations.scss */
+  0% {
+    position: relative;
+    left: 0;
+  }
+
+  /* line 44, ../includes/_animations.scss */
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes slide-down {
+  /* line 50, ../includes/_animations.scss */
+  0% {
+    max-height: 0;
+  }
+
+  /* line 53, ../includes/_animations.scss */
+  100% {
+    max-height: 3000px;
+  }
+}
+
+@-moz-keyframes slide-down {
+  /* line 50, ../includes/_animations.scss */
+  0% {
+    max-height: 0;
+  }
+
+  /* line 53, ../includes/_animations.scss */
+  100% {
+    max-height: 3000px;
+  }
+}
+
+@-o-keyframes slide-down {
+  /* line 50, ../includes/_animations.scss */
+  0% {
+    max-height: 0;
+  }
+
+  /* line 53, ../includes/_animations.scss */
+  100% {
+    max-height: 3000px;
+  }
+}
+
+@keyframes slide-down {
+  /* line 50, ../includes/_animations.scss */
+  0% {
+    max-height: 0;
+  }
+
+  /* line 53, ../includes/_animations.scss */
+  100% {
+    max-height: 3000px;
+  }
+}
+
+@-webkit-keyframes slide-up {
+  /* line 59, ../includes/_animations.scss */
+  0% {
+    max-height: 3000px;
+  }
+
+  /* line 62, ../includes/_animations.scss */
+  100% {
+    max-height: 0;
+  }
+}
+
+@-moz-keyframes slide-up {
+  /* line 59, ../includes/_animations.scss */
+  0% {
+    max-height: 3000px;
+  }
+
+  /* line 62, ../includes/_animations.scss */
+  100% {
+    max-height: 0;
+  }
+}
+
+@-o-keyframes slide-up {
+  /* line 59, ../includes/_animations.scss */
+  0% {
+    max-height: 3000px;
+  }
+
+  /* line 62, ../includes/_animations.scss */
+  100% {
+    max-height: 0;
+  }
+}
+
+@keyframes slide-up {
+  /* line 59, ../includes/_animations.scss */
+  0% {
+    max-height: 3000px;
+  }
+
+  /* line 62, ../includes/_animations.scss */
+  100% {
+    max-height: 0;
+  }
+}
+
+@-webkit-keyframes iphone-slide {
+  /* line 68, ../includes/_animations.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 71, ../includes/_animations.scss */
+  12.5% {
+    left: -100%;
+  }
+
+  /* line 74, ../includes/_animations.scss */
+  25% {
+    left: -100%;
+  }
+
+  /* line 77, ../includes/_animations.scss */
+  37.5% {
+    left: -200%;
+  }
+
+  /* line 80, ../includes/_animations.scss */
+  50% {
+    left: -200%;
+  }
+
+  /* line 83, ../includes/_animations.scss */
+  62.5% {
+    left: -300%;
+  }
+
+  /* line 86, ../includes/_animations.scss */
+  75% {
+    left: -300%;
+  }
+
+  /* line 89, ../includes/_animations.scss */
+  87.5% {
+    left: 0%;
+  }
+
+  /* line 92, ../includes/_animations.scss */
+  100% {
+    left: 0%;
+  }
+}
+
+@-moz-keyframes iphone-slide {
+  /* line 68, ../includes/_animations.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 71, ../includes/_animations.scss */
+  12.5% {
+    left: -100%;
+  }
+
+  /* line 74, ../includes/_animations.scss */
+  25% {
+    left: -100%;
+  }
+
+  /* line 77, ../includes/_animations.scss */
+  37.5% {
+    left: -200%;
+  }
+
+  /* line 80, ../includes/_animations.scss */
+  50% {
+    left: -200%;
+  }
+
+  /* line 83, ../includes/_animations.scss */
+  62.5% {
+    left: -300%;
+  }
+
+  /* line 86, ../includes/_animations.scss */
+  75% {
+    left: -300%;
+  }
+
+  /* line 89, ../includes/_animations.scss */
+  87.5% {
+    left: 0%;
+  }
+
+  /* line 92, ../includes/_animations.scss */
+  100% {
+    left: 0%;
+  }
+}
+
+@-o-keyframes iphone-slide {
+  /* line 68, ../includes/_animations.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 71, ../includes/_animations.scss */
+  12.5% {
+    left: -100%;
+  }
+
+  /* line 74, ../includes/_animations.scss */
+  25% {
+    left: -100%;
+  }
+
+  /* line 77, ../includes/_animations.scss */
+  37.5% {
+    left: -200%;
+  }
+
+  /* line 80, ../includes/_animations.scss */
+  50% {
+    left: -200%;
+  }
+
+  /* line 83, ../includes/_animations.scss */
+  62.5% {
+    left: -300%;
+  }
+
+  /* line 86, ../includes/_animations.scss */
+  75% {
+    left: -300%;
+  }
+
+  /* line 89, ../includes/_animations.scss */
+  87.5% {
+    left: 0%;
+  }
+
+  /* line 92, ../includes/_animations.scss */
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes iphone-slide {
+  /* line 68, ../includes/_animations.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 71, ../includes/_animations.scss */
+  12.5% {
+    left: -100%;
+  }
+
+  /* line 74, ../includes/_animations.scss */
+  25% {
+    left: -100%;
+  }
+
+  /* line 77, ../includes/_animations.scss */
+  37.5% {
+    left: -200%;
+  }
+
+  /* line 80, ../includes/_animations.scss */
+  50% {
+    left: -200%;
+  }
+
+  /* line 83, ../includes/_animations.scss */
+  62.5% {
+    left: -300%;
+  }
+
+  /* line 86, ../includes/_animations.scss */
+  75% {
+    left: -300%;
+  }
+
+  /* line 89, ../includes/_animations.scss */
+  87.5% {
+    left: 0%;
+  }
+
+  /* line 92, ../includes/_animations.scss */
+  100% {
+    left: 0%;
+  }
+}
+
+/*------------------------------------*\
+    CONTENTS
+\*------------------------------------*/
+/*
+
+$SETUP
+$VIDEO
+$CONTENT
+
+*/
+/*------------------------------------*\
+    $SETUP
+\*------------------------------------*/
+/* line 30, ../main.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+}
+
+/* line 39, ../main.scss */
+body {
+  background: #ebebeb;
+  font-family: "HelveticaNeueW01-55Roma", "Helvetica", Arial, sans-serif, "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-weight: normal;
+  color: dimgrey;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+/* line 89, ../includes/_mixins.scss */
+body .from-mobile-landscape-on,
+body .from-tablet-on,
+body .from-tablet-landscape-on,
+body .from-desktop-on,
+body .from-desktop-large-on {
+  display: none;
+}
+@media (min-width: 480px) {
+  /* line 94, ../includes/_mixins.scss */
+  body .from-mobile-landscape-on {
+    display: inherit;
+  }
+}
+@media (min-width: 768px) {
+  /* line 100, ../includes/_mixins.scss */
+  body .mobile-only {
+    display: none;
+  }
+  /* line 104, ../includes/_mixins.scss */
+  body .from-tablet-on {
+    display: inherit;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 110, ../includes/_mixins.scss */
+  body .from-tablet-landscape-on {
+    display: inherit;
+  }
+}
+@media (min-width: 1280px) {
+  /* line 116, ../includes/_mixins.scss */
+  body .from-desktop-on {
+    display: inherit;
+  }
+}
+@media (min-width: 1500px) {
+  /* line 122, ../includes/_mixins.scss */
+  body .from-desktop-large-on {
+    display: inherit;
+  }
+}
+
+/* line 48, ../main.scss */
+strong {
+  font-family: "HelveticaNeueW01-75Bold", "Helvetica", Arial, sans-serif;
+}
+
+/* line 52, ../main.scss */
+a {
+  color: red;
+  text-decoration: none;
+}
+/* line 57, ../main.scss */
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+/* line 62, ../main.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #3c3c3c;
+  letter-spacing: -1px;
+}
+
+/* line 67, ../main.scss */
+img {
+  max-width: 100%;
+}
+
+/*------------------------------------*\
+    $VIDEO
+\*------------------------------------*/
+/* line 86, ../main.scss */
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+/*------------------------------------*\
+    $CONTENT
+\*------------------------------------*/
+/* line 105, ../main.scss */
+.main {
+  width: 1280px;
+  margin: 0 auto;
+  background: #eb0042;
+  padding-bottom: 120px;
+}
+
+/* line 112, ../main.scss */
+.video {
+  width: 100%;
+  height: 970px;
+  background: #fe4d4d;
+}
+/* line 117, ../main.scss */
+.video video {
+  position: relative;
+  top: -75px;
+}
+
+/* line 123, ../main.scss */
+.menu-section {
+  width: 100%;
+  height: 870px;
+  background: #7302dd;
+  -webkit-transform: skewY(-10deg);
+  -moz-transform: skewY(-10deg);
+  -ms-transform: skewY(-10deg);
+  -o-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+  margin-top: -115px;
+  position: relative;
+  z-index: 50;
+}
+
+/* line 133, ../main.scss */
+.slogan {
+  width: 100%;
+  height: 1000px;
+  background: green;
+  -webkit-transform: skewY(-10deg);
+  -moz-transform: skewY(-10deg);
+  -ms-transform: skewY(-10deg);
+  -o-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+  position: relative;
+  z-index: 10;
+}
+
+/* line 142, ../main.scss */
+.photos {
+  width: 100%;
+  background: blue;
+  margin-top: -120px;
+  overflow: hidden;
+}
+/* line 148, ../main.scss */
+.photos .col-container {
+  width: 640px;
+  overflow: hidden;
+}
+/* line 152, ../main.scss */
+.photos .col-container.col1 {
+  float: left;
+}
+/* line 156, ../main.scss */
+.photos .col-container.col2 {
+  float: right;
+}
+/* line 160, ../main.scss */
+.photos .col-container .col {
+  width: 660px;
+  height: 800px;
+  overflow-y: scroll;
+}
+/* line 165, ../main.scss */
+.photos .col-container .col li {
+  list-style: none;
+}
+/* line 167, ../main.scss */
+.photos .col-container .col li img {
+  width: 100%;
+  margin-top: -3px;
+}
+
+/* line 176, ../main.scss */
+.contact {
+  width: 100%;
+  height: 1400px;
+  background: #eb0042;
+  margin-top: -120px;
+  -webkit-transform: skewY(-10deg);
+  -moz-transform: skewY(-10deg);
+  -ms-transform: skewY(-10deg);
+  -o-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+}
