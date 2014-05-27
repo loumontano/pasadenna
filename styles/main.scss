@@ -37,7 +37,7 @@ $CONTENT
 
 
 body {
-    background: $grayBg;
+    background: #2c2c2c;
     font-family: $SansSerif, "Helvetica Neue", "Helvetica", Arial, sans-serif;
     font-weight: normal;
     color: $grayText;
@@ -105,7 +105,7 @@ img {
 .main {
     width: 1280px;
     margin: 0 auto;
-    background: #eb0042;
+    background: url(../../images/bg-bottom.jpg) no-repeat bottom;
     padding-bottom: 120px;
 }
 
@@ -133,10 +133,20 @@ img {
 .slogan {
   width: 100%;
   height: 1000px;
-  background: green;
+  background: #fafbf7;
   @include transform( skewY(-10deg));
   position: relative;
   z-index: 10;
+
+  .slogan-copy {
+    width: 380px;
+    height: 490px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-left: -190px;
+    margin-top: -245px;
+  }
 }
 
 .photos {
@@ -159,7 +169,7 @@ img {
     
     .col {
       width: 660px;
-      height: 800px;
+      height: 1200px;
       overflow-y: scroll;
 
       li {
@@ -174,9 +184,9 @@ img {
 }
 
 .contact {
+  background: url(../../images/bg-contacto.jpg) no-repeat;
   width: 100%;
-  height: 1400px;
-  background: #eb0042;
+  height: 1800px;
   margin-top: -120px;
   @include transform( skewY(-10deg));
 }
