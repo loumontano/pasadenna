@@ -769,13 +769,13 @@ img {
 /* line 112, ../main.scss */
 .video {
   width: 100%;
-  height: 970px;
+  height: 650px;
   background: #fe4d4d;
 }
 /* line 117, ../main.scss */
 .video video {
   position: relative;
-  top: -75px;
+  top: -700px;
 }
 
 /* line 123, ../main.scss */
