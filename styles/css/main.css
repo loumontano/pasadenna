@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 */
 /* line 15, ../includes/_basic.scss */
 html, body, div, span, applet, object, iframe,
@@ -652,7 +653,7 @@ $CONTENT
 /*------------------------------------*\
     $SETUP
 \*------------------------------------*/
-/* line 30, ../main.scss */
+/* line 27, ../main.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -661,11 +662,11 @@ $CONTENT
   -webkit-text-size-adjust: none;
 }
 
-/* line 39, ../main.scss */
+/* line 36, ../main.scss */
 body {
   background: #2c2c2c;
-  font-family: "HelveticaNeueW01-55Roma", "Helvetica", Arial, sans-serif, "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-weight: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   color: dimgrey;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -714,28 +715,29 @@ body .from-desktop-large-on {
   }
 }
 
-/* line 48, ../main.scss */
+/* line 45, ../main.scss */
 strong {
-  font-family: "HelveticaNeueW01-75Bold", "Helvetica", Arial, sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 
-/* line 52, ../main.scss */
+/* line 50, ../main.scss */
 a {
   color: red;
   text-decoration: none;
 }
-/* line 57, ../main.scss */
+/* line 55, ../main.scss */
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 62, ../main.scss */
+/* line 60, ../main.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #3c3c3c;
   letter-spacing: -1px;
 }
 
-/* line 67, ../main.scss */
+/* line 65, ../main.scss */
 img {
   max-width: 100%;
 }
@@ -743,7 +745,7 @@ img {
 /*------------------------------------*\
     $VIDEO
 \*------------------------------------*/
-/* line 86, ../main.scss */
+/* line 84, ../main.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -758,7 +760,7 @@ img {
 /*------------------------------------*\
     $CONTENT
 \*------------------------------------*/
-/* line 105, ../main.scss */
+/* line 103, ../main.scss */
 .main {
   width: 1200px;
   margin: 0 auto;
@@ -766,7 +768,7 @@ img {
   padding-bottom: 120px;
 }
 
-/* line 112, ../main.scss */
+/* line 110, ../main.scss */
 .video {
   width: 100%;
   height: 750px;
@@ -780,25 +782,25 @@ img {
   -o-transform: skewY(-12deg);
   transform: skewY(-12deg);
 }
-/* line 121, ../main.scss */
+/* line 119, ../main.scss */
 .video video {
   position: relative;
   top: -700px;
 }
 
-/* line 127, ../main.scss */
+/* line 125, ../main.scss */
 .menu-section {
   width: 100%;
   height: 870px;
   margin-top: -290px;
   position: relative;
 }
-/* line 133, ../main.scss */
+/* line 131, ../main.scss */
 .menu-section .menu-background {
   position: absolute;
 }
 
-/* line 138, ../main.scss */
+/* line 136, ../main.scss */
 .slogan {
   width: 100%;
   height: 1000px;
@@ -811,7 +813,7 @@ img {
   position: relative;
   z-index: 10;
 }
-/* line 146, ../main.scss */
+/* line 144, ../main.scss */
 .slogan .slogan-copy {
   -webkit-transform: skewY(10deg);
   -moz-transform: skewY(10deg);
@@ -826,48 +828,48 @@ img {
   margin-left: -190px;
   margin-top: -245px;
 }
-/* line 156, ../main.scss */
+/* line 154, ../main.scss */
 .slogan .slogan-copy img {
   width: 80%;
 }
 
-/* line 162, ../main.scss */
+/* line 160, ../main.scss */
 .photos {
   width: 100%;
   background: blue;
   margin-top: -120px;
   overflow: hidden;
 }
-/* line 168, ../main.scss */
+/* line 166, ../main.scss */
 .photos .col-container {
   width: 600px;
   overflow: hidden;
 }
-/* line 172, ../main.scss */
+/* line 170, ../main.scss */
 .photos .col-container.col1 {
   float: left;
 }
-/* line 176, ../main.scss */
+/* line 174, ../main.scss */
 .photos .col-container.col2 {
   float: right;
 }
-/* line 180, ../main.scss */
+/* line 178, ../main.scss */
 .photos .col-container .col {
   width: 620px;
   height: 1200px;
   overflow-y: scroll;
 }
-/* line 185, ../main.scss */
+/* line 183, ../main.scss */
 .photos .col-container .col li {
   list-style: none;
 }
-/* line 187, ../main.scss */
+/* line 185, ../main.scss */
 .photos .col-container .col li img {
   width: 100%;
   margin-top: -3px;
 }
 
-/* line 196, ../main.scss */
+/* line 194, ../main.scss */
 .contact {
   background: url(../../images/bg-contacto.jpg) no-repeat;
   width: 100%;

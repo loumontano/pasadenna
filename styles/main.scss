@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
 @import 'includes/_mixins';
 @import 'includes/_basic';
 @import 'includes/_animations'; 
@@ -22,10 +23,6 @@ $CONTENT
 /*------------------------------------*\
     $SETUP
 \*------------------------------------*/
-//
-// Webfont: Helvetica
-//
-//@import url("http://fast.fonts.net/cssapi/2e6acf9a-f8ea-49db-a816-608996769328.css");
 
 * {
     -webkit-box-sizing: border-box; 
@@ -38,15 +35,16 @@ $CONTENT
 
 body {
     background: #2c2c2c;
-    font-family: $SansSerif, "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    font-weight: normal;
+    font-family: $pageFont;
+    font-weight: 400;
     color: $grayText;
     @include smooth-text;
     @include responsive-css-includes;
 }
 
 strong {
-    font-family: $BoldSansSerif;
+    font-family: $pageFont;
+    font-weight: 700;
 }
 
 a {
